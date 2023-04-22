@@ -1,0 +1,25 @@
+{
+  "name": "automation-engine-scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tstl",
+    "dev": "tstl --watch",
+    "format": "prettier --write '*/**/*.{ts,md,json}'",
+    "lint:ts": "eslint --ext .ts src"
+  },
+  "devDependencies": {
+    "@linters/eslint-config-node": "1.12.0",
+    "@linters/eslint-config-typescript": "1.18.0",
+    "@linters/prettier-config": "1.4.1",
+    "eslint": "8.38.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-import": "2.27.5",
+    "prettier": "2.8.7",
+    "typescript": "5.0.4"
+  },
+  "dependencies": {
+    "typescript-to-lua": "1.14.0"
+  }
+}
